@@ -1,0 +1,24 @@
+{% extends "base_admin.html" %}
+{% block content %}
+<p class="crumbs"><a href="{{ url_for('kanban', vid=c.vaga_id) }}">← {{ c.vaga.titulo }}</a></p>
+<div class="page-head"><h1>{{ c.nome }}</h1><span class="badge">{{ c.etapa }}</span></div>
+<div class="two">
+<section class="card"><h2 style="font-size:1.25rem">Contato</h2><p>{{ c.telefone }}<br>{{ c.email }}</p><p class="hint">Candidatura em {{ c.criado.strftime('%d/%m/%Y') }} · LGPD aceita em {{ c.lgpd_em.strftime('%d/%m/%Y') }}</p>
+<h2 style="font-size:1.25rem;margin-top:24px">Entrevista</h2>
+<form method="post"><input type="hidden" name="csrf" value="{{ csrf_token }}">
+<div class="field"><label for="entrevistado">Já entrevistado?</label><select id="entrevistado" name="entrevistado"><option value="nao">Não</option><option value="sim" {{ 'selected' if c.entrevistado }}>Sim</option></select></div>
+<div class="field"><label for="data_entrevista">Data da entrevista</label><input id="data_entrevista" name="data_entrevista" type="date" value="{{ c.data_entrevista or '' }}"></div>
+<div class="field"><label for="etapa">Etapa</label><select id="etapa" name="etapa">{% for e in ETAPAS %}<option {{ 'selected' if e==c.etapa }}>{{e}}</option>{% endfor %}</select></div>
+<div class="field"><label for="parecer">Parecer do entrevistador</label><textarea id="parecer" name="parecer">{{ c.parecer or '' }}</textarea></div>
+<button class="button">Salvar perfil</button></form></section>
+<section class="card"><h2 style="font-size:1.25rem">Perfil DISC</h2>
+{% if c.disc_totais %}{% set t = c.disc_totais %}{% set mx = t.values()|max %}
+<div class="disc-bars">{% for k in 'DISC' %}<div class="bar-row"><span>{{ k }} · {{ PERFIS[k] }}</span><div class="bar"><i style="width:{{ 100*t[k]/mx }}%"></i></div><strong>{{ t[k] }}</strong></div>{% endfor %}</div>
+{% set d = c.disc_dominante %}<p><strong>Fator dominante: {{ PERFIS[d] }}.</strong> {{ DISC.fichas[d]['Frase'][0] }}.</p>
+<p class="hint">{{ DISC.fichas[d]['Características Gerais'][0] }}</p>
+<details><summary><strong>Forças e pontos de atenção</strong></summary>
+<ul>{% for k,v in DISC.fichas[d].items() if k.startswith('Vantagens') or k.startswith('Desvantagens') %}{% for l in v %}<li>{{ l }}</li>{% endfor %}{% endfor %}</ul></details>
+<p class="hint">Resultado indicativo: use como apoio à entrevista, não como critério único.</p>
+{% else %}<p class="hint">Este candidato não fez o teste DISC.</p>{% endif %}</section></div>
+<section class="card" style="margin-top:22px"><h2 style="font-size:1.25rem">Respostas do questionário de cultura</h2>
+<dl class="qa">{% for q,r in c.lista_respostas %}<dt>{{ q }}</dt><dd>{{ r }}</dd>{% endfor %}</dl></section>{% endblock %}

@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{# Sem menu: tela limpa #}
+{% block body %}<div class="clean"><div class="card" style="text-align:center"><a class="brand" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='logo.png') }}" alt="Grupo Altamed"></a>
+<h1 style="font-size:1.7rem">Candidatura enviada!</h1><p>Recebemos seus dados e suas respostas. Se seu perfil seguir para a próxima etapa, entraremos em contato por telefone ou e-mail.</p>
+<a class="button" href="{{ url_for('index') }}#vagas">Ver outras vagas</a></div></div>{% endblock %}

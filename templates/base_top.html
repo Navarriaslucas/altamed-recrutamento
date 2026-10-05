@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{# Template COM MENU SUPERIOR (parte pública) #}
+{% block body %}
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='logo.png') }}" alt="Grupo Altamed Saúde Ocupacional"></a>
+  <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+    <a href="{{ url_for('index') }}#inicio">Início</a>
+    <a href="{{ url_for('index') }}#quem-somos">Sobre nós</a>
+    <a href="{{ url_for('index') }}#vagas">Vagas</a>
+    <a href="{{ url_for('index') }}#processo">Processo seletivo</a>
+    <a href="{{ url_for('privacidade') }}">Privacidade</a>
+    <a class="admin-link" href="{{ url_for('login') }}">Acesso Administrador</a>
+  </nav>
+  <button class="menu-button" data-toggle="#main-nav" aria-controls="main-nav" aria-expanded="false">Menu</button>
+</div></header>
+<main id="inicio">{% with m = get_flashed_messages(with_categories=true) %}{% if m %}<div class="container" style="padding-top:24px">{% for c,t in m %}<div class="flash {{c}}">{{t}}</div>{% endfor %}</div>{% endif %}{% endwith %}
+{% block content %}{% endblock %}</main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-grid">
+    <div><div class="footer-logo"><img src="{{ url_for('static', filename='logo.png') }}" alt="Grupo Altamed"></div>
+      <p>Medicina ocupacional, segurança do trabalho e gestão de SST em todo o Brasil.</p></div>
+    <div><h4>Mapa do site</h4><ul>
+      <li><a href="{{ url_for('index') }}#inicio">Página inicial</a></li>
+      <li><a href="{{ url_for('index') }}#vagas">Vagas abertas</a></li>
+      <li><a href="{{ url_for('privacidade') }}">Política de privacidade</a></li></ul></div>
+    <div><h4>Nossas unidades</h4><ul>{% for c,t in UNIDADES_RODAPE %}<li><strong>{{c}}:</strong> {{t}}</li>{% endfor %}</ul></div>
+  </div>
+  <div class="footer-bottom"><span>© {{ ano }} Grupo Altamed. Todos os direitos reservados.</span><a href="{{ url_for('privacidade') }}">Política de privacidade (LGPD)</a></div>
+</div></footer>
+{% endblock %}

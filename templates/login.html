@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{# Sem menu: tela limpa #}
+{% block title %}Acesso Administrador — Grupo Altamed{% endblock %}
+{% block body %}<div class="clean"><div class="card"><a class="brand" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='logo.png') }}" alt="Grupo Altamed"></a>
+<h1 style="font-size:1.6rem;text-align:center">Acesso Administrador</h1>
+{% with m = get_flashed_messages(with_categories=true) %}{% for c,t in m %}<div class="flash {{c}}">{{t}}</div>{% endfor %}{% endwith %}
+<form method="post"><input type="hidden" name="csrf" value="{{ csrf_token }}">
+<div class="field"><label for="email">E-mail corporativo</label><input id="email" name="email" type="email" autocomplete="username" required></div>
+<div class="field"><label for="senha">Senha</label><input id="senha" name="senha" type="password" autocomplete="current-password" required></div>
+<button class="button" style="width:100%">Entrar</button></form>
+<p style="text-align:center;margin:18px 0 0"><a class="text-link" href="{{ url_for('index') }}">← Voltar ao site</a></p></div></div>{% endblock %}

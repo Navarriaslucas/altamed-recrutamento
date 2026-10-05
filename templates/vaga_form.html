@@ -1,0 +1,12 @@
+{% extends "base_admin.html" %}
+{% block content %}
+<div class="page-head"><h1>{{ 'Editar vaga' if v.id else 'Nova vaga' }}</h1></div>
+<form method="post" class="card" style="max-width:780px"><input type="hidden" name="csrf" value="{{ csrf_token }}">
+<div class="field"><label for="titulo">Título da vaga</label><input id="titulo" name="titulo" type="text" required value="{{ v.titulo or '' }}"></div>
+<div class="two"><div class="field"><label for="area">Área</label><input id="area" name="area" type="text" value="{{ v.area or '' }}"></div>
+<div class="field"><label for="local">Local / modalidade</label><input id="local" name="local" type="text" value="{{ v.local or '' }}"></div></div>
+<div class="field"><label for="piso">Piso salarial</label><input id="piso" name="piso" type="text" placeholder="Ex.: R$ 2.800,00" value="{{ v.piso or '' }}"></div>
+<div class="field"><label for="descricao">Descrição</label><textarea id="descricao" name="descricao">{{ v.descricao or '' }}</textarea></div>
+<div class="field"><label for="requisitos">Requisitos</label><textarea id="requisitos" name="requisitos">{{ v.requisitos or '' }}</textarea><span class="hint">Um item por linha.</span></div>
+<div class="field"><label for="atividades">Atividades</label><textarea id="atividades" name="atividades">{{ v.atividades or '' }}</textarea><span class="hint">Um item por linha.</span></div>
+<div class="actions"><button class="button">Salvar vaga</button><a class="button button-ghost" href="{{ url_for('vagas_admin') }}">Cancelar</a></div></form>{% endblock %}

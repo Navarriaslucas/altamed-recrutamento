@@ -1,0 +1,15 @@
+{% extends "base_top.html" %}
+{% block title %}{{ v.titulo }} — Grupo Altamed{% endblock %}
+{% block content %}<div class="page"><div class="container">
+<p class="crumbs"><a href="{{ url_for('index') }}#vagas">← Todas as vagas</a></p>
+<div class="detail-grid"><div class="prose">
+  <div class="tags">{% if v.area %}<span class="tag">{{v.area}}</span>{% endif %}{% if v.local %}<span class="tag">{{v.local}}</span>{% endif %}</div>
+  <h1 style="font-size:clamp(2rem,4vw,3rem);margin-top:12px">{{ v.titulo }}</h1>
+  <h2 style="font-size:1.4rem">Descrição</h2><p>{{ v.descricao }}</p>
+  <h2 style="font-size:1.4rem">Requisitos</h2><ul>{% for l in (v.requisitos or '').splitlines() if l.strip() %}<li>{{ l }}</li>{% endfor %}</ul>
+  <h2 style="font-size:1.4rem">Atividades</h2><ul>{% for l in (v.atividades or '').splitlines() if l.strip() %}<li>{{ l }}</li>{% endfor %}</ul>
+</div>
+<aside class="card apply-box"><p class="hint">Piso salarial</p><p style="font:750 1.8rem var(--font-display);color:var(--primary)">{{ v.piso or 'A combinar' }}</p>
+  <a class="button" style="width:100%" href="{{ url_for('candidatar', vid=v.id) }}">Candidatar-se</a>
+  <p class="hint" style="margin:14px 0 0">Leva cerca de 15 minutos: seus dados, um questionário curto e o teste DISC.</p></aside>
+</div></div></div>{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "base_admin.html" %}
+{% block content %}
+<p class="crumbs"><a href="{{ url_for('vagas_admin') }}">← Minhas vagas</a></p>
+<div class="page-head"><h1>{{ v.titulo }} <span class="badge {{v.status}}">{{ v.status|capitalize }}</span></h1></div>
+<p class="hint">Arraste os cartões entre as colunas para mudar a etapa. Clique no nome para abrir o perfil.</p>
+<div class="board">{% for e in ETAPAS %}<section class="col" data-etapa="{{e}}" aria-label="Etapa {{e}}"><h3>{{e}} <span class="badge n">{{ cols[e]|length }}</span></h3>
+<div class="lista">{% for c in cols[e] %}<div class="kcard" draggable="true" data-id="{{c.id}}"><a href="{{ url_for('candidato', cid=c.id) }}"><strong>{{c.nome}}</strong></a>
+<small>{{c.email}}</small><br><small>{{ 'Entrevistado' if c.entrevistado else 'Sem entrevista' }}{% if c.disc_dominante %} · DISC: {{ c.disc_dominante }}{% endif %}</small></div>{% endfor %}</div></section>{% endfor %}</div>{% endblock %}

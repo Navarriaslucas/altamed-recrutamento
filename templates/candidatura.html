@@ -1,0 +1,34 @@
+{% extends "base_top.html" %}
+{% block title %}Candidatura — {{ v.titulo }}{% endblock %}
+{% block content %}<div class="page"><div class="container page-narrow">
+<p class="crumbs"><a href="{{ url_for('vaga', vid=v.id) }}">← {{ v.titulo }}</a></p>
+<h1>Candidatura: {{ v.titulo }}</h1>
+<form method="post" novalidate>
+<input type="hidden" name="csrf" value="{{ csrf_token }}">
+<fieldset class="fieldset"><legend>Seus dados</legend>
+  <div class="field"><label for="nome">Nome completo</label><input id="nome" name="nome" type="text" autocomplete="name" required value="{{ form.get('nome','') }}"></div>
+  <div class="field"><label for="telefone">Telefone</label><input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" required value="{{ form.get('telefone','') }}"></div>
+  <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required value="{{ form.get('email','') }}"></div>
+</fieldset>
+
+<fieldset class="fieldset"><legend>Valores e cultura</legend>
+  {% for p in perguntas %}<div class="field"><span class="legend">{{ loop.index }}. {{ p.texto }}</span>
+    {% if p.tipo == 'mc' %}{% for o in p.opcoes %}<label class="opcao"><input type="radio" name="{{p.id}}" value="{{o}}" required {{ 'checked' if form.get(p.id)==o }}> {{o}}</label>{% endfor %}
+    {% else %}<textarea name="{{p.id}}" required aria-label="{{p.texto}}">{{ form.get(p.id,'') }}</textarea>{% endif %}</div>{% endfor %}
+</fieldset>
+
+<fieldset class="fieldset"><legend>Avaliação de perfil (DISC)</legend>
+  <p>Em cada pergunta, dê uma nota de <strong>1 a 4</strong> para cada opção: <strong>4</strong> para a que <strong>mais</strong> combina com você e <strong>1</strong> para a que <strong>menos</strong> combina. Use cada número só uma vez por pergunta, sem empates.</p>
+  <p class="hint">Não pense demais: o primeiro pensamento costuma ser o mais sincero. Não há respostas certas ou erradas.</p>
+  <div class="progress" aria-hidden="true"><i id="disc-prog"></i></div><p class="hint">Perguntas completas: <span id="disc-count">0 de 26</span></p>
+  {% for p in disc %}<div class="disc-q"><h4>{{ p.n }}. {{ p.texto }}</h4>
+    {% for o in p.opcoes %}<div class="disc-opt"><label for="d{{p.n}}{{o.letra}}">{{ o.letra }}. {{ o.texto }}</label>
+      <select id="d{{p.n}}{{o.letra}}" name="disc_{{p.n}}_{{o.letra}}" required aria-label="Nota da opção {{o.letra}} da pergunta {{p.n}}">
+        <option value="">—</option>{% for n in (4,3,2,1) %}<option value="{{n}}" {{ 'selected' if form.get('disc_%s_%s'|format(p.n,o.letra))==n|string }}>{{n}}</option>{% endfor %}</select></div>{% endfor %}
+  </div>{% endfor %}
+</fieldset>
+
+<div class="field"><label class="check"><input type="checkbox" name="lgpd" required {{ 'checked' if form.get('lgpd') }}>
+  <span>Li e aceito a <a class="text-link" href="{{ url_for('privacidade') }}" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o Grupo Altamed a tratar meus dados para este processo seletivo, conforme a LGPD.</span></label></div>
+<button class="button" type="submit">Enviar candidatura</button>
+</form></div></div>{% endblock %}

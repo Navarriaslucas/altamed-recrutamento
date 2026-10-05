@@ -1,0 +1,11 @@
+{% extends "base_admin.html" %}
+{% block content %}
+<div class="page-head"><h1>Minhas vagas</h1><a class="button button-small" href="{{ url_for('vaga_form') }}">Nova vaga</a></div>
+<div class="table-wrap"><table><thead><tr><th>Vaga</th><th>Status</th><th>Candidatos</th><th>Ações</th></tr></thead><tbody>
+{% for v in vagas %}<tr><td><strong>{{v.titulo}}</strong><br><small class="hint">{{v.area}} · {{v.local}}</small></td>
+<td><span class="badge {{v.status}}">{{ v.status|capitalize }}</span></td><td>{{ v.candidatos|length }}</td>
+<td><div class="actions"><a class="button button-small button-ghost" href="{{ url_for('kanban', vid=v.id) }}">Kanban</a>
+<a class="button button-small button-ghost" href="{{ url_for('vaga_form', vid=v.id) }}">Editar</a>
+{% for s,rot in (('aberta','Reabrir'),('pausada','Pausar'),('encerrada','Encerrar')) if s != v.status %}
+<form method="post" action="{{ url_for('vaga_status', vid=v.id) }}"{% if s=='encerrada' %} onsubmit="return confirm('Encerrar esta vaga? Ela sai do mural.')"{% endif %}><input type="hidden" name="csrf" value="{{ csrf_token }}"><input type="hidden" name="status" value="{{s}}"><button class="button button-small button-ghost">{{rot}}</button></form>{% endfor %}
+</div></td></tr>{% else %}<tr><td colspan="4" class="hint">Nenhuma vaga ainda. Crie a primeira em “Nova vaga”.</td></tr>{% endfor %}</tbody></table></div>{% endblock %}

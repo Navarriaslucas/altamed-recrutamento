@@ -1,0 +1,48 @@
+{% extends "base_top.html" %}
+{% block content %}
+<section class="hero" aria-labelledby="hero-title"><div class="container"><div class="hero-copy">
+  <p class="eyebrow"><span></span> Trabalhe conosco</p>
+  <h1 id="hero-title">Grupo Altamed. Construa carreira cuidando de quem faz as empresas <em>acontecerem.</em></h1>
+  <p>Há mais de 22 anos unimos medicina ocupacional, engenharia de segurança e gestão de SST. Conheça as vagas abertas e candidate-se em poucos minutos.</p>
+  <div class="hero-specs"><div><small>Cultura</small><strong>Compromisso com a vida</strong></div><div><small>Processo</small><strong>Online e transparente</strong></div><div><small>Seus dados</small><strong>Protegidos pela LGPD</strong></div></div>
+  <div class="hero-actions"><a class="button" href="#vagas">Ver vagas abertas</a><a class="text-link" href="#processo">Como funciona o processo →</a></div>
+</div></div></section>
+
+<section class="section about" id="quem-somos"><div class="container about-grid">
+  <div class="about-visual"><img src="{{ url_for('static', filename='logo.png') }}" alt="Grupo Altamed Saúde Ocupacional"></div>
+  <div><p class="eyebrow"><span></span> Quem somos</p>
+    <h2>Uma equipe de SST que cuida de pessoas e de empresas.</h2>
+    <p>O Grupo Altamed é referência em Saúde Ocupacional, Segurança do Trabalho e Gestão de SST. Nosso sistema de gestão é <strong>100% online e integrado ao eSocial</strong>.</p>
+    <div class="unit-list">{% for c,t in UNIDADES %}<span>{{c}}</span>{% endfor %}</div>
+    <p class="hint">Unidades próprias e ampla rede de credenciados em todo o Brasil.</p></div>
+</div>
+<div class="container stats"><div><strong>+22</strong><span>anos de mercado</span></div><div><strong>+1.000</strong><span>empresas atendidas</span></div><div><strong>{{ vagas|length }}</strong><span>{{ 'vaga aberta' if vagas|length == 1 else 'vagas abertas' }} agora</span></div></div>
+</section>
+
+<section class="section vagas-section" id="vagas"><div class="container">
+  <div class="section-heading"><p class="eyebrow"><span></span> Mural de vagas</p><h2>Vagas abertas</h2><p>Escolha uma vaga para ver a descrição completa, os requisitos e o piso salarial.</p></div>
+  {% if vagas %}<div class="vagas-grid">{% for v in vagas %}
+    <article class="card vaga-card"><div class="tags">{% if v.area %}<span class="tag">{{v.area}}</span>{% endif %}{% if v.local %}<span class="tag">{{v.local}}</span>{% endif %}</div>
+      <h3>{{ v.titulo }}</h3><p>{{ (v.descricao or '')|truncate(130) }}</p>
+      <div class="hint">Piso salarial: <strong>{{ v.piso or 'a combinar' }}</strong></div>
+      <a class="button button-small" href="{{ url_for('vaga', vid=v.id) }}">Ver vaga</a></article>{% endfor %}</div>
+  {% else %}<div class="vazio">No momento não há vagas abertas. Volte em breve — novas oportunidades são publicadas aqui.</div>{% endif %}
+</div></section>
+
+<section class="section" id="valores"><div class="container">
+  <div class="section-heading centered"><p class="eyebrow"><span></span> Nosso propósito</p><h2>Segurança para hoje. Confiança para o futuro.</h2></div>
+  <div class="purpose-grid">
+    <article class="card purpose-card featured"><h3>Missão</h3><p>Promover ambientes de trabalho mais seguros, saudáveis e produtivos por meio de soluções integradas em SST.</p></article>
+    <article class="card purpose-card"><h3>Visão</h3><p>Ser referência nacional em Saúde Ocupacional e Segurança do Trabalho, reconhecida por inovação e qualidade.</p></article>
+    <article class="card purpose-card"><h3>Valores</h3><p>Compromisso com a vida<br>Ética e transparência<br>Excelência técnica<br>Melhoria contínua</p></article>
+  </div></div></section>
+
+<section class="section vagas-section" id="processo"><div class="container">
+  <div class="section-heading"><p class="eyebrow"><span></span> Processo seletivo</p><h2>Do cadastro à contratação, em quatro passos.</h2></div>
+  <ol class="steps">
+    <li><h3>Candidatura</h3><p>Dados de contato, questionário de cultura e avaliação de perfil DISC.</p></li>
+    <li><h3>Triagem</h3><p>O responsável pela vaga analisa seu perfil e suas respostas.</p></li>
+    <li><h3>Entrevista e teste</h3><p>Conversa com a liderança e, quando houver, teste prático.</p></li>
+    <li><h3>Retorno</h3><p>Você recebe o resultado por e-mail ou telefone.</p></li></ol>
+</div></section>
+{% endblock %}

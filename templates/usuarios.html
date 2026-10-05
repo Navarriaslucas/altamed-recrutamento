@@ -1,0 +1,5 @@
+{% extends "base_admin.html" %}
+{% block content %}
+<div class="page-head"><h1>Usuários</h1><a class="button button-small" href="{{ url_for('usuario_novo') }}">Cadastrar usuário</a></div>
+<div class="table-wrap"><table><thead><tr><th>Nome</th><th>E-mail</th><th>Perfil</th><th>Status</th><th>Vagas</th></tr></thead><tbody>
+{% for u in users %}<tr><td><strong>{{u.nome}}</strong></td><td>{{u.email}}</td><td>{{u.perfil}}</td><td><span class="badge {{ 'ativo' if u.ativo else 'inativo' }}">{{ 'Ativo' if u.ativo else 'Inativo' }}</span></td><td>{{ u.vagas|length }}</td></tr>{% endfor %}</tbody></table></div>{% endblock %}

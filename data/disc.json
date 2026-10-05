@@ -1,0 +1,1062 @@
+{
+ "perguntas": [
+  {
+   "n": 1,
+   "texto": "Em um restaurante. Estou esperando uma mesa e o garçom me diz que em 10 minutos terei uma mesa, porém passam 20 minutos:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Me aborreço e digo ao garçom que já se passou o dobro do tempo, e lhe informo que se demorar muito irei embora e eles perderão um cliente",
+     "perfil": "D"
+    },
+    {
+     "letra": "B",
+     "texto": "Não me dou conta pois estou envolvido em uma conversa.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Não me fixo ao tempo, ainda que eu saiba do atraso, não falo nada.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Informo ao Garçom exatamente a hora que cheguei e exatamente o tempo que passou e peço que por favor me diga com exatidão quanto tempo ainda falta para que eu possa tomar uma decisão.",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "texto": "Tenho muita fome e pressa. O garçom me traz um prato que eu não pedi:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Digo de maneira direta que este não foi o prato que pedi.",
+     "perfil": "C"
+    },
+    {
+     "letra": "B",
+     "texto": "Chamo o garçom e converso com ele explicando que este não era o prato que eu havia pedido.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Fico calado e aceito o prato que me trouxeram.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Me incomodo e pergunto ao garçom de uma forma aborrecida se ele estava prestando atenção quando fiz meu pedido?",
+     "perfil": "D"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "texto": "Em uma reunião de amigos:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Eu gosto de convencer aos demais de minhas opiniões e gosto de falar sobre temas relacionados com meu trabalho.",
+     "perfil": "D"
+    },
+    {
+     "letra": "B",
+     "texto": "Escuto as pessoas. As pessoas me procuram pois sou um excelente ouvinte. Escuto as pessoas com atenção.",
+     "perfil": "S"
+    },
+    {
+     "letra": "C",
+     "texto": "Falo muito e conto bastante piadas. Geralmente falo mais do que escuto.",
+     "perfil": "I"
+    },
+    {
+     "letra": "D",
+     "texto": "Observo e analiso as pessoas, porém dou minha opinião. Todavia só dou minha opinião quando conheço o tema e quando o faço sou preciso.",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "texto": "Meus companheiros de trabalho me descrevem como alguém:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Tranquilo, Paciente, Amável.",
+     "perfil": "S"
+    },
+    {
+     "letra": "B",
+     "texto": "Social, Alegre, Gosta de Conversar.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Enérgico, Forte, Agressivo.",
+     "perfil": "D"
+    },
+    {
+     "letra": "D",
+     "texto": "Concreto, Disciplinado, Metódico.",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "texto": "Em uma discussão:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Trato de dizer que não é para tanto, pois discutir me aborrece.",
+     "perfil": "I"
+    },
+    {
+     "letra": "B",
+     "texto": "Busco ter a razão e não paro até que consiga. Gosto de discutir.",
+     "perfil": "D"
+    },
+    {
+     "letra": "C",
+     "texto": "Odeio agressões, concordo com o que esta sendo dito para não precisar argumentar.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Me baseio nos fatos e busco comprovar meu ponto de vista de uma forma fundamentada e também espero que os demais hajam assim.",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "texto": "O que realmente me emociona na vida:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Os desafios, As novidades, Arriscar.",
+     "perfil": "D"
+    },
+    {
+     "letra": "B",
+     "texto": "As surpresas, A diversão, O jogo.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "A doçura, O carinho, Aceitação",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Aprender, Sabedoria, Conhecimento",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "texto": "Se alguém me agride:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Fico calado e não demonstro o que sinto.",
+     "perfil": "S"
+    },
+    {
+     "letra": "B",
+     "texto": "Escapo da situação ou pergunto a outra pessoa se ela é louca.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Devolvo a agressão pois necessito demonstrar minha insatisfação de imediato. Da mesma forma que me incomodo rapidamente me tranquilizo.",
+     "perfil": "D"
+    },
+    {
+     "letra": "D",
+     "texto": "Me angustio, me privo e me resguardo, porém tento descobrir por que isso aconteceu. Demora algum tempo para que passe minha insatisfação com o acontecido.",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "texto": "Quando vou as compras",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Busco ofertas, os descontos me fascinam.",
+     "perfil": "D"
+    },
+    {
+     "letra": "B",
+     "texto": "Me divirto indo as compras. Gosto de comprar presentes, dizem que sou um comprador compulsivo.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Sei o que quero e não gasto meu dinheiro se não encontro. Sou muito definido.",
+     "perfil": "C"
+    },
+    {
+     "letra": "D",
+     "texto": "Sou indeciso, me dá muito trabalho decidir e escolher.",
+     "perfil": "S"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "texto": "Que frase te descreve melhor:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Sou tranquilo e passivo, gosto das pessoas que são fáceis de conviver e que não me agridam. As pessoas me perguntam se nunca me aborreço.",
+     "perfil": "S"
+    },
+    {
+     "letra": "B",
+     "texto": "Sou alegre e jovial. Se vejo alguém triste procuro levar alegria a está pessoa. As pessoas me perguntam se nunca me deprimo.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Sou ativo e enérgico, gosto de fazer várias coisas ao mesmo tempo, as pessoas perguntam se não me canso.",
+     "perfil": "D"
+    },
+    {
+     "letra": "D",
+     "texto": "Sou analítico e observador, gosto de resolver problemas que me exijam pensar e de encontrar soluções. As pessoas me dizem que sou muito responsável e apreensivo.",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "texto": "Quando estou trabalhando em equipe sou:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "O que organiza a parte estratégica com finalidade de conseguir uma maior probabilidade de êxito.",
+     "perfil": "C"
+    },
+    {
+     "letra": "B",
+     "texto": "O que anima o ambiente fazendo com que todos tenham vontade.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "O que manda e organiza.",
+     "perfil": "D"
+    },
+    {
+     "letra": "D",
+     "texto": "O que apóia com propósito de se ter uma equipe unida.",
+     "perfil": "S"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "texto": "Meus irmãos e as pessoas que me rodeiam , dizem que meus piores defeitos são:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Ser teimoso e quadrado",
+     "perfil": "C"
+    },
+    {
+     "letra": "B",
+     "texto": "Ser agressivo e temperamental.",
+     "perfil": "D"
+    },
+    {
+     "letra": "C",
+     "texto": "Ser submisso e lento.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Ser distraído e desorganizado.",
+     "perfil": "I"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "texto": "Alguma de minhas qualidades são:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Ser Determinado e seguro.",
+     "perfil": "D"
+    },
+    {
+     "letra": "B",
+     "texto": "Ser Adaptado e pacífico.",
+     "perfil": "S"
+    },
+    {
+     "letra": "C",
+     "texto": "Ser Otimista e alegre.",
+     "perfil": "I"
+    },
+    {
+     "letra": "D",
+     "texto": "Ser Cumpridor e estável",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "texto": "Estou caminhando e esbarro com algum desconhecido:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Dou um passo ao lado e sem falar sigo meu caminho.",
+     "perfil": "C"
+    },
+    {
+     "letra": "B",
+     "texto": "Dou um sorriso e sigo em frente.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Espero que a pessoa saia do meu caminho para poder seguir adiante.",
+     "perfil": "D"
+    },
+    {
+     "letra": "D",
+     "texto": "Peço que me desculpe e sigo em frente.",
+     "perfil": "S"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "texto": "No trabalho me sobressaio em:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Na tomada de decisões rapidamente.",
+     "perfil": "D"
+    },
+    {
+     "letra": "B",
+     "texto": "Nas relações públicas",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Na capacidade de me adaptar a equipes",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Na segurança de ter qualidade e pontualidade.",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "texto": "Meus defeitos no trabalho são:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Não gosto de delegar, prefiro trabalhar sozinho.",
+     "perfil": "C"
+    },
+    {
+     "letra": "B",
+     "texto": "Não gosto que me digam o que fazer.",
+     "perfil": "D"
+    },
+    {
+     "letra": "C",
+     "texto": "Trabalho mais sobre baixa pressão.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Desordenado e esquecido e as vezes impontual.",
+     "perfil": "I"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "texto": "Minha mãe diz que quando criança eu era:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Obediente e tranquilo.",
+     "perfil": "S"
+    },
+    {
+     "letra": "B",
+     "texto": "Mandão e exigente.",
+     "perfil": "D"
+    },
+    {
+     "letra": "C",
+     "texto": "Alegre e conversava com todo mundo.",
+     "perfil": "I"
+    },
+    {
+     "letra": "D",
+     "texto": "Bem arrumado e eu não gostava de me sujar.",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "texto": "Ao me expressar:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Falo as coisas de maneira diplomática.",
+     "perfil": "C"
+    },
+    {
+     "letra": "B",
+     "texto": "Quase não expresso o que sinto.",
+     "perfil": "S"
+    },
+    {
+     "letra": "C",
+     "texto": "Falo de maneira indireta para não magoar.",
+     "perfil": "I"
+    },
+    {
+     "letra": "D",
+     "texto": "Falo as coisas como são.",
+     "perfil": "D"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "texto": "A emoção que demonstro com mais frequência é:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Medo.",
+     "perfil": "C"
+    },
+    {
+     "letra": "B",
+     "texto": "Otimismo",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Não demonstro emoção.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Irritação.",
+     "perfil": "D"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "texto": "Os professores me reconheciam por que:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Discutia muito e gostava de demonstrar tudo que eu sabia.",
+     "perfil": "D"
+    },
+    {
+     "letra": "B",
+     "texto": "Bom estudante e bastante analítico.",
+     "perfil": "C"
+    },
+    {
+     "letra": "C",
+     "texto": "Não interrompia e ficava calado.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Era muito amigável e gostava de conversar.",
+     "perfil": "I"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "texto": "Características que mais te descrevem:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Auto-suficiente e ambicioso.",
+     "perfil": "D"
+    },
+    {
+     "letra": "B",
+     "texto": "Preciso e exato.",
+     "perfil": "C"
+    },
+    {
+     "letra": "C",
+     "texto": "Cooperativo e adaptável.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Despreocupado e popular.",
+     "perfil": "I"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "texto": "Características que mais te descrevem:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Reservado e educado.",
+     "perfil": "C"
+    },
+    {
+     "letra": "B",
+     "texto": "Amigo e conversador.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Tolerante e flexível.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Valente e ousado.",
+     "perfil": "D"
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "texto": "Características que mais te descrevem:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Obstinado, determinação para me defender.",
+     "perfil": "D"
+    },
+    {
+     "letra": "B",
+     "texto": "Confiante, acredito nas pessoas.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Prudente, gosto de refletir bem sobre as coisas.",
+     "perfil": "C"
+    },
+    {
+     "letra": "D",
+     "texto": "Pronto a servir, gosto de ajudar aos demais.",
+     "perfil": "S"
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "texto": "Características que mais te descrevem:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Brincalhão, chama a atenção das pessoas.",
+     "perfil": "I"
+    },
+    {
+     "letra": "B",
+     "texto": "Empreendedor, força de vontade.",
+     "perfil": "D"
+    },
+    {
+     "letra": "C",
+     "texto": "Generoso, se adapta aos demais.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Cuidadoso, cautela ao tomar decisões.",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "texto": "Características que mais te descrevem:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Calmo, faz o que te pedem.",
+     "perfil": "S"
+    },
+    {
+     "letra": "B",
+     "texto": "Envolvente, motiva aos demais.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Atrevido, crê em si próprio.",
+     "perfil": "D"
+    },
+    {
+     "letra": "D",
+     "texto": "Disciplinado, organizado e limpo.",
+     "perfil": "C"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "texto": "Características que mais te descrevem:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Culto, busca ter conhecimento.",
+     "perfil": "C"
+    },
+    {
+     "letra": "B",
+     "texto": "Animado, alma da festa.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Harmonioso, aberto a sugestões.",
+     "perfil": "S"
+    },
+    {
+     "letra": "D",
+     "texto": "Confrontante, gosta de argumentar.",
+     "perfil": "D"
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "texto": "Características que mais te descrevem:",
+   "opcoes": [
+    {
+     "letra": "A",
+     "texto": "Humilde, compassivo (condolente) com as pessoas.",
+     "perfil": "S"
+    },
+    {
+     "letra": "B",
+     "texto": "Carismático, atrai as pessoas, desinibido.",
+     "perfil": "I"
+    },
+    {
+     "letra": "C",
+     "texto": "Tem atitude, persuasivo, convincente.",
+     "perfil": "D"
+    },
+    {
+     "letra": "D",
+     "texto": "Sistemático, cético, precavido.",
+     "perfil": "C"
+    }
+   ]
+  }
+ ],
+ "fichas": {
+  "D": {
+   "Frase": [
+    "Fazer e impulsionar o mundo"
+   ],
+   "Características Gerais": [
+    "Direto - Impositivo - Trabalhador Compulsivo"
+   ],
+   "O que move os Dominantes?": [
+    "Poder"
+   ],
+   "(Motivação)": [
+    "Ter o controle",
+    "Ser o melhor",
+    "Resultados"
+   ],
+   "Necessidade Básica": [
+    "CONTROLE"
+   ],
+   "Como reconhecê-los": [
+    "Energia exorbitante, segurança de si mesmo, tom de voz forte, opiniões contundentes.",
+    "Ao caminhar: pisada forte, segura, sempre olha para frente e para os olhos das pessoas.",
+    "Em uma reunião: fala somente de temas que interessam a si próprio e que ele pode ser superior",
+    "Em um seminário: atitudes desafiadoras, acredita saber mais que o expositor.",
+    "Por sua forma de vestir: reflete poder e autoridade, status e êxito, gosta de ser considerado importante.",
+    "Pela maneira de se expressar: direto, mandão, impositivo. Fala rápido, gosta de convencer os demais.",
+    "No escritório: é o mais ativo, faz mais de uma coisa por vez. Líder nato, se enfoca em uma meta final.",
+    "Seu sentido mais desenvolvido: tato"
+   ],
+   "Vantagens ou Forças": [
+    "Perseverança - Adora desafios.",
+    "Energia - Quer abraçar o mundo.",
+    "Visão - Não existem obstáculos insuperáveis."
+   ],
+   "Desvantagens ou Debilidades": [
+    "Egocêntrico - Auto-estima alta, insensível.",
+    "Explosivo - Primeiro reage, depois pensa.",
+    "Mandão - Exige que o que ele pede seja feito o mais rápido possível.",
+    "Manipulador - Faz tudo que pode para ter o controle.",
+    "Impaciente, Agressivo"
+   ],
+   "Para melhorar a Comunicação": [
+    "Seja suave, dê seu lugar a ele, peça as coisas com boas maneiras…"
+   ],
+   "com um Dominante": [
+    "Elogie-o",
+    "Espere até que ele se tranquilize...",
+    "Vá direto ao ponto…",
+    "Se mantenha tranquilo...",
+    "Pergunte, não adivinhe..."
+   ],
+   "Como um Dominante pode melhorar": [
+    "Se concentre nas pessoas..."
+   ],
+   "sua comunicação com os demais": [
+    "Não interrompa os outros...",
+    "Tenha cuidado com o que diz...",
+    "Seja humilde...",
+    "Evite as chantagens...",
+    "Cuide do seu tom de voz..."
+   ],
+   "Tempo livre": [
+    "Atividades em geral"
+   ],
+   "Sobre Pressão": [
+    "Explora, agride, se motiva ainda mais para atingir suas metas"
+   ],
+   "Caráter": [
+    "Extrovertido"
+   ],
+   "Medo": [
+    "De perder o controle"
+   ],
+   "Outras Denominações": [
+    "Autoritário, agressivo"
+   ],
+   "Elemento associado": [
+    "Fogo"
+   ]
+  },
+  "I": {
+   "Frase": [
+    "A inspiração e a alegria do mundo"
+   ],
+   "Características Gerais": [
+    "Confia nos demais - Entusiasmado - Confiante"
+   ],
+   "O que move os Influentes?": [
+    "Divertido"
+   ],
+   "(Motivação)": [
+    "Popular",
+    "Aceitação",
+    "Conexão Emocional"
+   ],
+   "Necessidade Básica": [
+    "ATENÇÃO"
+   ],
+   "Como reconhecê-los": [
+    "Por sua alegria, por falar constantemente, é amigável, impontual, distraído.",
+    "Ao caminhar: canta e fala sozinho",
+    "Em uma reunião: as pessoas se aglutinam e fazem um círculo ao seu redor.",
+    "Em um seminário: muito emocionado por conhecer novas pessoas. Se senta onde tem mais pessoas.",
+    "Por sua forma de vestir: são criativos e originais, escolhem roupas divertidas. Preferem cores chamativas.",
+    "Pela forma que se expressa: gesticula todo o tempo, fazem \"caras e bocas\", movem as mãos.",
+    "No escritório: sempre estão conversando com alguma pessoa. Organizam confraternizações.",
+    "Seu sentido mais desenvolvido: paladar"
+   ],
+   "Vantagens ou Forças": [
+    "Brincalhão e Divertido - Busca alegria em tudo que faz.",
+    "Otimista - Energia positiva. Vê o lado positivo de tudo até das piores situações.",
+    "Entusiasta - Dificilmente se deprime. Não dão tanta seriedade as coisas.",
+    "Despreocupado - \"Para que  se preocupar? De todas as formas tudo vai dar certo.\"",
+    "Efusivo - Gritam, saltam, esperneiam e aplaudem quando ganham um prêmio."
+   ],
+   "Desvantagens ou Debilidades": [
+    "Esquecido e Distraído - Falta de concentração. Às vezes seus descuidos parecem ser de propósito.",
+    "Não terminam o que começam - Lhes fascina iniciar projetos, porém somente iniciá-los, raramente os concluem.",
+    "Evasivo - São muito hábeis em se desvincular de responsabilidades, culpas e erros.",
+    "Exagerado - Quando relatam uma história a convertem em algo extraordinário.",
+    "Desorganizado"
+   ],
+   "Para melhorar a Comunicação": [
+    "Seja cálido e pessoal…"
+   ],
+   "com um influente": [
+    "Mostre apreço por seu idealismo e por seu otimismo...",
+    "Compartilhe seu entusiasmo…",
+    "Seja paciente...",
+    "Ajude-os a aterrissar…",
+    "Peça que tomem e que tenham um rumo…"
+   ],
+   "Como um influente pode melhorar": [
+    "Falar menos e escutar mais..."
+   ],
+   "sua comunicação com os demais": [
+    "Seja o mais claro possível...",
+    "Observe a comunicação não verbal dos demais...",
+    "Evite exagerar...",
+    "Cuide dos monólogos..."
+   ],
+   "Tempo livre": [
+    "Está em contato com pessoas"
+   ],
+   "Sobre pressão": [
+    "Dá desculpas, não se responsabiliza, minimiza problemas, é evasivo, dá pretextos"
+   ],
+   "Caráter": [
+    "Extrovertido"
+   ],
+   "Medo": [
+    "Ser considerado chato e não ser aceito"
+   ],
+   "Outras denominações": [
+    "Social, Sanguíneo, Catalisador"
+   ],
+   "Elemento associado": [
+    "Ar"
+   ]
+  },
+  "S": {
+   "Frase": [
+    "A paz e a tranquilidade do mundo"
+   ],
+   "Características Gerais": [
+    "Não sabem dizer \"Não\" - Inexpressivo - Evita o confronto - Detalhista"
+   ],
+   "O que move os Estáveis?": [
+    "Aprovação"
+   ],
+   "(Motivação)": [
+    "Servir aos demais",
+    "Evitar conflitos",
+    "Estabilidade"
+   ],
+   "Necessidade Básica": [
+    "PAZ"
+   ],
+   "Como reconhecê-los": [
+    "Por sua tranquilidade, atitude adaptável, lentidão ao falar e caminhar, calado.",
+    "Ao caminhar: vai com toda a calma do mundo, nunca tem pressa.",
+    "Em uma reunião: são sutis e discretos. Permanecem sentados e quase não falam, gostam de escutar.",
+    "Em um seminário: gosta de se superar e de aprender de tudo. Sua humildade é a prova de balas.",
+    "Pela forma de se vestir: discreto e conservador. Usam cores que não chama a atenção.",
+    "Pela forma que se expressa: são calmos e gentis. Sua maneira de falar é lenta e suave. Equilibrado.",
+    "No escritório: não se irrita e nem fica nervoso (ao menos demonstra isso). Se entrega as tarefas. Paz.",
+    "Seu sentido mais desenvolvido: audição"
+   ],
+   "Vantagens ou Forças": [
+    "Fácil de levar - São os que dizem \"sim\" a todo mundo. Contagiam por sua paz e estabilidade.",
+    "Paciente - São a prova de tudo. Ninguém pode reduzir sua tranquilidade e sua paciência.",
+    "Bons para escutar - Deixam de lado suas atividades para escutar. Não julgam."
+   ],
+   "Desvantagens ou debilidades": [
+    "Inseguro - Tem problemas para expor seus pontos de vista e seus desejos.",
+    "Desmotivado - Necessita constantemente que reafirmem seus feitos e avanços.",
+    "Entediado - São em princípio passivos, não assumem risco e nem buscam novidades. Monotonia.",
+    "Indeciso - Batalha para tomar uma decisão. Busca sempre um suporte para decidir algo."
+   ],
+   "Para Melhorar a Comunicação": [
+    "Mantenha a tranquilidade..."
+   ],
+   "com um Estável": [
+    "Utilize um tom amável...",
+    "Faça perguntas...",
+    "Inspire segurança...",
+    "Utilize empatia e atenção",
+    "Seja sensível a suas emoções",
+    "Dê tempo para que ele se decida..."
+   ],
+   "Como um Estável pode melhorar": [
+    "seja assertivo..."
+   ],
+   "sua Comunicação com os demais": [
+    "Diga \"não\"...",
+    "Não leve as coisas para o lado pessoal...",
+    "Expresse suas emoções...",
+    "Valorize seus comentários"
+   ],
+   "Tempo livre": [
+    "Família"
+   ],
+   "Sobre Pressão": [
+    "Se esconde, não funciona, congela, quer desaparecer"
+   ],
+   "Caráter": [
+    "Introvertido"
+   ],
+   "Medo": [
+    "De se confrontar, de agressões e principalmente das MUDANÇAS"
+   ],
+   "Outras Denominações": [
+    "Paciente, Sereno"
+   ],
+   "Elemento associado": [
+    "Água"
+   ]
+  },
+  "C": {
+   "Frase": [
+    "Estrategistas e filósofos da vida"
+   ],
+   "Características Gerais": [
+    "Dedicado - Detalhista - Confiável - Não Delegam"
+   ],
+   "O que move os Condescendentes?": [
+    "Seus espaços (independência, privacidade)"
+   ],
+   "(Motivação)": [
+    "Informação e procedimentos",
+    "Desafios mentais",
+    "Ter a razão",
+    "Reconhecimento e aprovação"
+   ],
+   "Necessidade Básica": [
+    "ORDEM"
+   ],
+   "Como reconhecê-los": [
+    "Fala corretamente e com fundamentos, é limpo e cuida de seus aspectos físicos.",
+    "Ao caminhar: vai direto ao seu destino. É cortês porém com um semblante sério, não sorri. Concentrado.",
+    "Em uma reunião: reconhece os \"novos\" e observa detalhadamente. Fica sempre no mesmo lugar.",
+    "Em um seminário: está atento as credenciais e no currículo do expositor. Faz anotações organizadas.",
+    "Forma de se vestir: são sóbrios e elegantes.",
+    "Pela forma de se expressar: não falam muito, pensam bem antes de dizer algo. São diretos e claros.",
+    "No escritório: não promove jogos pelo poder, se mantém alheio aos interesses dos outros.",
+    "Seu sentido mais desenvolvido: visão"
+   ],
+   "Vantagens ou Forças": [
+    "Comprometido e leal - Os princípios ético são os mais importantes. Dificilmente se chateiam ou são infiéis.",
+    "Consideração - Antes de tomar uma decisão consulta os envolvidos.",
+    "Profundo e Espiritual - Valorizam muito a dimensão mística da vida."
+   ],
+   "Desvantagens ou debilidades": [
+    "Muito exigentes - Se empenham em tirar dez em tudo que fazem. Falhar não está em seu vocabulário.",
+    "Apreensivo - Levam tudo a sério. Tudo é de vital importância. Tudo lhes parece transcendental e crítico.",
+    "Teimoso - Não muda de opinião.",
+    "Pessimista - Sempre vê algo negativo nas coisas.",
+    "Perfeccionista - Investe muito tempo e energia para que o mundo seja perfeito."
+   ],
+   "Para melhorar a Comunicação": [
+    "Seja claro, conciso e concreto..."
+   ],
+   "com um Condescendente": [
+    "Se não está de acordo, prove o contrário...",
+    "Seja organizado e preciso...",
+    "Utilize as palavras corretas",
+    "Dê tempo para pensar...",
+    "Leve-os em consideração...",
+    "Respeite seu silêncio..."
+   ],
+   "Como um Condescendente pode": [
+    "Seja menos literal..."
+   ],
+   "melhorar": [
+    "Coloque interesse ao escutar..."
+   ],
+   "sua comunicação com os demais": [
+    "Fale as coisas na hora...",
+    "Seja mais aberto..."
+   ],
+   "Tempo livre": [
+    "Privacidade"
+   ],
+   "Sobre pressão": [
+    "Se fecha, se deprime, se martiriza, exige muito de si próprio"
+   ],
+   "Caráter": [
+    "Introvertido"
+   ],
+   "Medo": [
+    "Do Irracional, de equivocar-se, de não ser compreendido"
+   ],
+   "Outras denominações": [
+    "Analítico, Cumpridor, Melancólico"
+   ],
+   "Elemento associado": [
+    "Terra"
+   ]
+  }
+ },
+ "desc": {
+  "D": {
+   "nome": "D - Domínio",
+   "descricao": [
+    "Aventureiro",
+    "Competitivo",
+    "Ousado",
+    "Decidido",
+    "Direto",
+    "Inovador",
+    "Persistente",
+    "Resolve problemas",
+    "Foco nos resultados",
+    "Com iniciativa"
+   ]
+  },
+  "I": {
+   "nome": "I - Influente",
+   "descricao": [
+    "Encantador",
+    "Confidente",
+    "Convincente",
+    "Entusiasta",
+    "Inspirador",
+    "Otimista",
+    "Persuasivo",
+    "Popular",
+    "Sociável",
+    "Confiante"
+   ]
+  },
+  "S": {
+   "nome": "S – Estabilidade",
+   "descricao": [
+    "Amável",
+    "Amigável",
+    "Sabe escutar",
+    "Paciente",
+    "Descontraído",
+    "Sincero",
+    "Estável",
+    "Consciente",
+    "Jogador de equipe",
+    "Compreensivo"
+   ]
+  },
+  "C": {
+   "nome": "C - Cumprimento",
+   "descricao": [
+    "Exato",
+    "Analítico",
+    "Consciente",
+    "Cortês",
+    "Diplomático",
+    "Procura realizações",
+    "Padrões altos",
+    "Maduro",
+    "Paciente",
+    "Preciso"
+   ]
+  }
+ }
+}

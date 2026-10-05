@@ -1,0 +1,16 @@
+{% extends "base_admin.html" %}
+{% block content %}
+<div class="page-head"><h1>Olá, {{ me.nome.split()[0] }}</h1><a class="button button-small" href="{{ url_for('vaga_form') }}">Nova vaga</a></div>
+<div class="kpis">
+  <div class="card kpi"><strong>{{ abertas }}</strong><span>vagas abertas</span></div>
+  <div class="card kpi"><strong>{{ total }}</strong><span>candidatos nas suas vagas</span></div>
+  <div class="card kpi"><strong>{{ por_etapa['Aprovado'] }}</strong><span>aprovados</span></div>
+  <div class="card kpi"><strong>{{ conv }}%</strong><span>taxa de conversão (aprovados ÷ candidatos)</span></div>
+</div>
+<div class="two">
+  <section class="card"><h2 style="font-size:1.25rem">Candidatos por vaga</h2>
+    {% for v,n in por_vaga %}<div class="bar-row"><a href="{{ url_for('kanban', vid=v.id) }}">{{ v.titulo|truncate(22) }}</a><div class="bar"><i style="width:{{ (100*n/total) if total else 0 }}%"></i></div><strong>{{n}}</strong></div>
+    {% else %}<p class="hint">Você ainda não criou vagas.</p>{% endfor %}</section>
+  <section class="card"><h2 style="font-size:1.25rem">Candidatos por etapa</h2>
+    {% for e in ETAPAS %}<div class="bar-row"><span>{{e}}</span><div class="bar"><i style="width:{{ (100*por_etapa[e]/total) if total else 0 }}%"></i></div><strong>{{ por_etapa[e] }}</strong></div>{% endfor %}</section>
+</div>{% endblock %}
